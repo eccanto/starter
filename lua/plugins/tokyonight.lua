@@ -3,12 +3,13 @@ return {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = {
-      style = "night",
+      style = "dark",
       transparent = true,
       styles = {
         sidebars = "transparent",
         floats = "transparent",
       },
+      sidebars = { "terminal", "toggleterm" },
       on_colors = function(colors)
         colors.fg = "#CECECE"
         colors.cyan = "#FF8000"
