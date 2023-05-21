@@ -17,3 +17,11 @@ opt.foldlevel = 99
 opt.foldcolumn = "0"
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+
+-- indenting
+opt.expandtab = true
+opt.shiftwidth = 2
+opt.smartindent = true
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.autoindent = true
