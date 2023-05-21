@@ -5,3 +5,5 @@
 vim.cmd "autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab"
 vim.cmd "autocmd FileType cpp setlocal shiftwidth=4 softtabstop=4 expandtab"
 vim.cmd "autocmd FileType sh setlocal shiftwidth=4 softtabstop=4 expandtab"
+vim.cmd "autocmd FileType robot setlocal shiftwidth=4 softtabstop=4 expandtab"
+vim.cmd "autocmd FileType yml setlocal shiftwidth=4 softtabstop=4 expandtab"
