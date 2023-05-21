@@ -5,3 +5,15 @@
 local opt = vim.opt
 
 opt.colorcolumn = "120"
+
+-- select ocurrences
+vim.g.VM_maps = {
+  ["Find Under"] = "<C-d>",
+  ["Find Subword Under"] = "<C-d>",
+}
+
+-- folding
+opt.foldlevel = 99
+opt.foldcolumn = "0"
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"

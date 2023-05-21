@@ -7,7 +7,26 @@ return {
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
+        robotframework_ls = {},
       },
     },
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "json-lsp",
+        "pyright",
+        "shfmt",
+        "stylua",
+        "typescript-language-server",
+        "robotframework-lsp",
+      },
+    },
+  },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    enabled = false,
   },
 }
