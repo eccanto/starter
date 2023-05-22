@@ -18,8 +18,6 @@ return {
         "lua-language-server",
         "json-lsp",
         "pyright",
-        "shfmt",
-        "stylua",
         "typescript-language-server",
         "robotframework-lsp",
       },
