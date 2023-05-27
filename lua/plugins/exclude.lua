@@ -7,4 +7,8 @@ return {
     'echasnovski/mini.animate',
     enabled = false,
   },
+  {
+    'hrsh7th/nvim-cmp',
+    enabled = false,
+  }
 }

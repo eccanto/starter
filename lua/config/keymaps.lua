@@ -34,3 +34,23 @@ vim.keymap.set("n", "<C-A-S-Up>", "<cmd> resize -5 <CR>", { noremap = true, desc
 -- Coc
 vim.keymap.set("n", "gd", "<cmd> call CocActionAsync('jumpDefinition') <CR>", { noremap = true, desc = "Go to definition" })
 vim.keymap.set("n", "gb", "<C-o>", { noremap = true, desc = "move to left window" })
+vim.keymap.set(
+  'i',
+  '<tab>',
+  function()
+    if vim.fn['coc#pum#visible']() == 1 then
+      return vim.fn['coc#pum#confirm']()
+    else
+      return '<tab>'
+    end
+  end,
+  { noremap = true, silent = true, expr = true, desc = 'Select current coc suggestion'}
+)
+vim.keymap.set(
+    'i',
+    '<c-space>',
+    function()
+      return vim.fn['coc#refresh']()
+    end,
+    { noremap = true, silent = true, expr = true, desc = 'Open coc suggestions popup' }
+)
