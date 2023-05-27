@@ -1,6 +1,10 @@
 return {
   {
-    "echasnovski/mini.indentscope",
+    'echasnovski/mini.indentscope',
+    enabled = false,
+  },
+  {
+    'echasnovski/mini.animate',
     enabled = false,
   },
 }

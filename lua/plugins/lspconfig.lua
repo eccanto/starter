@@ -1,30 +1,29 @@
 return {
   {
-    "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
+    'neovim/nvim-lspconfig',
+    enabled = false,
     opts = {
-      ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
         robotframework_ls = {},
       },
     },
   },
   {
-    "williamboman/mason-lspconfig.nvim",
+    'williamboman/mason-lspconfig.nvim',
+    enabled = false,
     opts = {
       ensure_installed = {
-        "lua-language-server",
-        "json-lsp",
-        "pyright",
-        "typescript-language-server",
-        "robotframework-lsp",
+        'lua-language-server',
+        'json-lsp',
+        'pyright',
+        'typescript-language-server',
+        'robotframework-lsp',
       },
     },
   },
   {
-    "jose-elias-alvarez/null-ls.nvim",
+    'jose-elias-alvarez/null-ls.nvim',
     enabled = false,
   },
 }
