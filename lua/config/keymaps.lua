@@ -30,3 +30,7 @@ vim.keymap.set("n", "<C-A-S-Left>", "<cmd> vertical resize -5 <CR>", { noremap =
 vim.keymap.set("n", "<C-A-S-Right>", "<cmd> vertical resize +5 <CR>", { noremap = true, desc = "resize window to right" })
 vim.keymap.set("n", "<C-A-S-Down>", "<cmd> resize -5 <CR>", { noremap = true, desc = "resize window to down" })
 vim.keymap.set("n", "<C-A-S-Up>", "<cmd> resize -5 <CR>", { noremap = true, desc = "resize window to up" })
+
+-- Coc
+vim.keymap.set("n", "gd", "<cmd> call CocActionAsync('jumpDefinition') <CR>", { noremap = true, desc = "Go to definition" })
+vim.keymap.set("n", "gb", "<C-o>", { noremap = true, desc = "move to left window" })
