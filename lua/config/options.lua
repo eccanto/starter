@@ -25,3 +25,5 @@ opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
 opt.autoindent = true
+
+vim.g.instant_markdown_autostart = 0
