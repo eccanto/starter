@@ -16,6 +16,7 @@ return {
         "vim",
         "yaml",
         "markdown",
+        "cpp",
       },
       ignore_install = {
         "markdown_inline",
