@@ -1,6 +1,9 @@
 -- Disable defaults keymaps
 vim.keymap.del("n", "<leader>e")
 
+-- Terminal
+vim.keymap.set("t", "<C-l>", "<c-n><c-w><c-l>", { desc = "clear" })
+
 -- Editor
 vim.keymap.set({ "n", "v" }, "<leader>ec", ":Commentary<CR>", { noremap = true, desc = "Comment lines" })
 vim.keymap.set("n", "<leader>er", "<Plug>(coc-rename)", { noremap = true, silent = true, desc = "Rename variable" })
