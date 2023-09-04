@@ -17,6 +17,7 @@ return {
         "yaml",
         "markdown",
         "cpp",
+        "robot",
       },
       ignore_install = {
         "markdown_inline",
