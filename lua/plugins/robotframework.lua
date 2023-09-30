@@ -1,5 +1,0 @@
-return {
-  {
-    "mfukar/robotframework-vim",
-  },
-}
