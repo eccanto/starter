@@ -19,6 +19,10 @@ return {
         "cpp",
         "robot",
       },
+      highlight = {
+        enable = true,
+        disable = { "html", "bash", "markdown" },
+      },
       ignore_install = {
         "markdown_inline",
       },
