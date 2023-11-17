@@ -26,4 +26,11 @@ opt.tabstop = 4
 opt.softtabstop = 4
 opt.autoindent = true
 
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "*" },
+  callback = function()
+    vim.b.autoformat = false
+  end,
+})
+
 vim.g.instant_markdown_autostart = 0
