@@ -4,7 +4,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     keys = {
-      { "<leader>sR", "<cmd>Telescope resume<cr>", desc = "Resume" },
+      { "<leader>r", "<cmd>Telescope resume<cr>", desc = "Resume" },
       { "<leader>/", Util.telescope("live_grep", { cwd = false }), desc = "Grep (cwd)" },
       { "<leader>sg", Util.telescope("live_grep", { cwd = false }), desc = "Grep (cwd)" },
       { "<leader>sG", Util.telescope("live_grep"), desc = "Grep (root dir)" },
