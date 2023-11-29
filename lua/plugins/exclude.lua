@@ -1,18 +1,18 @@
 return {
-  {
-    'echasnovski/mini.indentscope',
-    enabled = false,
-  },
-  {
-    'echasnovski/mini.animate',
-    enabled = false,
-  },
-  {
-    'hrsh7th/nvim-cmp',
-    enabled = false,
-  },
-  {
-    'ggandor/flit.nvim',
-    enabled = false,
-  },
+    {
+        'echasnovski/mini.indentscope',
+        enabled = false,
+    },
+    {
+        'echasnovski/mini.animate',
+        enabled = false,
+    },
+    {
+        'hrsh7th/nvim-cmp',
+        enabled = false,
+    },
+    {
+        'folke/flash.nvim',
+        enabled = false,
+    }
 }
