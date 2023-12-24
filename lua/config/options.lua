@@ -34,3 +34,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 })
 
 vim.g.instant_markdown_autostart = 0
+vim.g.instant_markdown_theme = 'dark'
+vim.g.instant_markdown_autoscroll = 1
+vim.g.instant_markdown_port = 8888
+vim.g.instant_markdown_browser = 'chromium-browser --app-url'
