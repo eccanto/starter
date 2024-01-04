@@ -12,6 +12,9 @@ vim.g.VM_maps = {
   ["Find Subword Under"] = "<C-d>",
 }
 
+-- wrap
+opt.wrap = false
+
 -- folding
 opt.foldlevel = 99
 opt.foldcolumn = "0"
