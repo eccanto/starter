@@ -38,6 +38,7 @@ vim.keymap.set('n', '<C-A-S-Down>', '<cmd> resize -5 <CR>', { noremap = true, de
 vim.keymap.set('n', '<C-A-S-Up>', '<cmd> resize -5 <CR>', { noremap = true, desc = 'resize window to up' })
 
 -- Coc
+vim.keymap.set('i', '<CR>', 'pumvisible() ? coc#_select_confirm() : "<C-g>u<CR>"', { expr = true, silent = true })
 vim.keymap.set('n', '<leader>wd', '<cmd> CocDiagnostics <CR>', { noremap = true, desc = 'Open diagnistics window' })
 vim.keymap.set('n', 'gd', '<cmd> call CocActionAsync("jumpDefinition") <CR>', { noremap = true, desc = 'Go to definition' })
 vim.keymap.set('n', 'gb', '<C-o>', { noremap = true, desc = 'move to left window' })
