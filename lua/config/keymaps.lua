@@ -18,8 +18,8 @@ vim.keymap.set('n', '<leader>tt', '<cmd>Neotree toggle<CR>', { noremap = true, d
 vim.keymap.set('n', '<leader>tf', '<cmd>Neotree<CR>', { noremap = true, desc = 'Focus File Explorer' })
 
 -- Tabs
-vim.keymap.set('n', '<tab>', '<cmd>BufferLineCycleNext<CR>', { noremap = true, desc = 'Go to next Tab' })
-vim.keymap.set('n', '<S-tab>', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, desc = 'Go to previous Tab' })
+vim.keymap.set('n', '<Tab>', '<cmd>BufferLineCycleNext<CR>', { noremap = true, desc = 'Go to next Tab' })
+vim.keymap.set('n', '<S-Tab>', '<cmd>BufferLineCyclePrev<CR>', { noremap = true, desc = 'Go to previous Tab' })
 vim.keymap.set('n', '<leader>x', '<cmd>BufDel<CR>', { noremap = true, desc = 'Close current Tab' })
 
 -- Split
@@ -65,3 +65,6 @@ vim.keymap.set(
 -- Markdown preview
 vim.keymap.set("n", "<leader>mp", "<cmd> InstantMarkdownPreview <CR>", { noremap = true, desc = "Open markdown preview" })
 vim.keymap.set("n", "<leader>mP", "<cmd> InstantMarkdownStop <CR>", { noremap = true, desc = "Stop markdown preview" })
+
+-- Codeium
+vim.keymap.set('i', '<Tab>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
