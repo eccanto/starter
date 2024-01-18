@@ -14,6 +14,7 @@ return {
         colors.fg = "#CECECE"
         colors.cyan = "#FF8000"
         colors.blue1 = "#D91FDF"
+        colors.comment = "#8990B2"
       end,
       on_highlights = function(highlights, colors)
         highlights.TelescopeBorder = {
