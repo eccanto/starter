@@ -66,6 +66,3 @@ vim.keymap.set(
 -- Markdown preview
 vim.keymap.set("n", "<leader>mp", "<cmd> InstantMarkdownPreview <CR>", { noremap = true, desc = "Open markdown preview" })
 vim.keymap.set("n", "<leader>mP", "<cmd> InstantMarkdownStop <CR>", { noremap = true, desc = "Stop markdown preview" })
-
--- Codeium
-vim.keymap.set('i', '<S-Tab>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
