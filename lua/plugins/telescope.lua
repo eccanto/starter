@@ -4,16 +4,56 @@ return {
     {
         'nvim-telescope/telescope.nvim',
         keys = {
-            { '<leader>/', Util.telescope('live_grep'), desc = 'Grep (root dir)' },
-            { '<leader>r', Util.telescope('resume'), desc = 'Resume' },
-            { '<leader>sg', Util.telescope('live_grep'), desc = 'Grep (root dir)' },
-            { '<leader>sG', Util.telescope('live_grep', { cwd = false }), desc = 'Grep (cwd)' },
-            { '<leader>sf', Util.telescope('files'), desc = 'Find Files (root dir)' },
-            { '<leader>sF', Util.telescope('files', { cwd = false }), desc = 'Find Files (cwd)' },
-            { '<leader>so', Util.telescope('oldfiles'), desc = 'Recent (root dir)' },
-            { '<leader>sO', Util.telescope('oldfiles', { cwd = false }), desc = 'Recent (cwd)' },
-            { '<leader>sb', Util.telescope('buffers'), desc = 'Buffers (root dir)' },
-            { '<leader>sB', Util.telescope('buffers', { cwd = false }), desc = 'Buffers (cwd)' },
+            {
+                "<leader>/",
+                function() require("telescope.builtin").live_grep({}) end,
+                desc = "Grep (root dir)",
+            },
+            {
+                "<leader>r",
+                function() require("telescope.builtin").resume({}) end,
+                desc = "Resume",
+            },
+            {
+                "<leader>sg",
+                function() require("telescope.builtin").live_grep({}) end,
+                desc = "Grep (root dir)",
+            },
+            {
+                "<leader>sG",
+                function() require("telescope.builtin").live_grep({ cwd = false }) end,
+                desc = "Grep (cwd)",
+            },
+            {
+                "<leader>sf",
+                function() require("telescope.builtin").files({}) end,
+                desc = "Find Files (root dir)",
+            },
+            {
+                "<leader>sF",
+                function() require("telescope.builtin").files({ cwd = false }) end,
+                desc = "Find Files (cwd)",
+            },
+            {
+                "<leader>so",
+                function() require("telescope.builtin").oldfiles({}) end,
+                desc = "Recent (root dir)",
+            },
+            {
+                "<leader>sO",
+                function() require("telescope.builtin").oldfiles({ cwd = false }) end,
+                desc = "Recent (cwd)",
+            },
+            {
+                "<leader>sb",
+                function() require("telescope.builtin").buffers({}) end,
+                desc = "Buffers (root dir)",
+            },
+            {
+                "<leader>sB",
+                function() require("telescope.builtin").buffers({ cwd = false }) end,
+                desc = "Buffers (cwd)",
+            },
         },
         opts = {
             defaults = {
